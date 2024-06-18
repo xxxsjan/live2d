@@ -30,7 +30,9 @@
 		</div>`
         )
         showMessage('欢迎', 2000)
-        loadlive2d("live2d", "model/XueXiaoBan/xxb/index.json")
+
+        const modelName ='chiaki_kitty'
+        loadlive2d("live2d", `model/${modelName}/${modelName}.model.json`)
 
         fetch('http://localhost:3000/get').then(res => res.json()).then(res => {
             console.log(res);
